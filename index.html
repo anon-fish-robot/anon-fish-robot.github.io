@@ -7,19 +7,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Watch and Match: Supercharging Imitation with Regularized Optimal Transport">
-  <meta property="og:description" content="Watch and Match: Supercharging Imitation with Regularized Optimal Transport">
+  <meta property="og:title" content="Teach a Robot to FISH: Versatile Imitation from One Minute of Demonstrations">
+  <meta property="og:description" content="Teach a Robot to FISH: Versatile Imitation from One Minute of ">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Watch and Match: Supercharging Imitation with Regularized Optimal Transport">
+  <meta property="og:site_name" content="Teach a Robot to FISH: Versatile Imitation from One Minute of Demonstrations">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Watch and Match: Supercharging Imitation with Regularized Optimal Transport">
+  <meta name="twitter:title" content="Teach a Robot to FISH: Versatile Imitation from One Minute of Demonstrations">
   <meta name="twitter:description"
     content="We propose a new imitation learning algorithm that substantially improves sample efficiency for continuous control problems in simulation and on real-world robotic manipulation tasks.">
   <meta name="twitter:image" content="./mfiles/arch bet.001.png" />
   <link rel="shortcut icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/simple-grid.css">
-  <title>Teach a Robot to FISH: Versatile Imitation from
-One Minute of Demonstrations</title>
+  <title>Teach a Robot to FISH: Versatile Imitation from One Minute of Demonstrations</title>
 </head>
 
 <body>
@@ -37,14 +36,14 @@ One Minute of Demonstrations</title>
         </div>
         <div class="col-2 center">
           <a style="text-decoration: none" href="Hello" download>
-            <h3 style="color: #F5A803">Data</h3>
-          </a>
-        </div>
-        <div class="col-2 center">
-          <a style="text-decoration: none" href="" download>
             <h3 style="color: #F5A803">Code</h3>
           </a>
         </div>
+        <!-- <div class="col-2 center">
+          <a style="text-decoration: none" href="" download>
+            <h3 style="color: #F5A803">Data</h3>
+          </a>
+        </div> -->
       </div>
 
       <!--Intro video-->
@@ -66,28 +65,18 @@ One Minute of Demonstrations</title>
         <div class="col-12">
           <h2 class="center m-bottom">Abstract</h2>
           <p>
-            While imitation learning provides us with an efficient toolkit to train robots, learning skills that are robust to
-environment variations remains a significant challenge. Current
-approaches address this challenge by relying either on large
-amounts of demonstrations that span environment variations or
-on handcrafted reward functions that require state estimates.
-Both directions are not scalable to fast imitation. In this work,
-we present Fast Imitation of Skills from Humans (FISH), a
-new imitation learning approach that can learn robust visual
-skills with less than a minute of human demonstrations. Given a
-weak base-policy trained by offline imitation of demonstrations,
-FISH computes rewards that correspond to the “match” between
-the robot’s behavior and the demonstrations. These rewards
-are then used to adaptively update a residual policy that adds
-on to the base-policy. Across all tasks, FISH requires at most
-twenty minutes of interactive learning to imitate demonstrations
-on object configurations that were not seen in the demonstrations.
-Importantly, FISH is constructed to be versatile, which allows it
-to be used across robot morphologies (e.g. xArm, Allegro, Stretch)
-and camera configurations (e.g. third-person, eye-in-hand). Our
-experimental evaluations on 9 different tasks show that FISH
-achieves an average success rate of 93%, which is around 3.8×
-higher than prior state-of-the-art methods.
+            While imitation learning provides us with an efficient toolkit to train robots, learning skills that are robust to 
+            environment variations remains a significant challenge. Current approaches address this challenge by relying either
+            on large amounts of demonstrations that span environment variations or on handcrafted reward functions that require state estimates.
+            Both directions are not scalable to fast imitation. In this work, we present Fast Imitation of Skills from Humans (FISH), a
+            new imitation learning approach that can learn robust visual skills with less than a minute of human demonstrations. Given a
+            weak base-policy trained by offline imitation of demonstrations, FISH computes rewards that correspond to the “match” between
+            the robot’s behavior and the demonstrations. These rewards are then used to adaptively update a residual policy that adds
+            on to the base-policy. Across all tasks, FISH requires at most twenty minutes of interactive learning to imitate demonstrations
+            on object configurations that were not seen in the demonstrations. Importantly, FISH is constructed to be versatile, which allows it
+            to be used across robot morphologies (e.g. xArm, Allegro, Stretch) and camera configurations (e.g. third-person, eye-in-hand). Our
+            experimental evaluations on 9 different tasks show that FISH achieves an average success rate of 93%, which is around 3.8× higher 
+            than prior state-of-the-art methods.
           </p>
         </div>
       </div>
@@ -106,58 +95,58 @@ higher than prior state-of-the-art methods.
       <div class="row">
         <div class="col-12">
           <h2 class="center m-bottom">Real-World Results</h2>
-          <p>We provide evaluation rollouts of ROT on a set of 14 real-world manipulation tasks. With just one demonstration and one hour of
-             online training, ROT achieved an average sucess rate of 90.1% across 14 tasks. This is significantly higher than behavior 
-             cloning (36.1%) and adversarial IRL (14.6%) based approaches.
+          <p>We provide evaluation rollouts of FISH on a set of 9 real-world tasks across 3 robot morphologies. With just one demonstration and less than 20 minutes
+            of online learning, FISH achieved an average sucess rate of 93% across 9 tasks which is around 3.8× higher 
+            than prior state-of-the-art methods.
           </p>
         </div>
       </div>
     </div>
-    <br><br> -->
+    <br><br>  -->
     <!-- <div class="body-content">
       <div class="container">
         <div class="grid-display">
           <div class="row">
             <div class="col-6">
-              <img class="img" style="height: 600" src="./mfiles/gifs/closedoor.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hand_cube_flip.gif">
             </div>
             <div class="col-6">
-              <img class="img" style="height: 600" src="./mfiles/gifs/hanghanger.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hand_bottle_open.gif">
             </div>
           </div>
           <div class="row">
             <div class="col-6">
-              <img class="img" style="height: 600" src="./mfiles/gifs/eraseboard.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hand_dollar_bill.gif">
             </div>
             <div class="col-6 center">
-             <img class="img" style="height: 600" src="./mfiles/gifs/reach.gif">
+             <img class="img" style="height: 600" src="./mfiles/gifs/hello_door_open.gif">
             </div>
           </div>
           <div class="row">
             <div class="col-6">
-              <img class="img" style="height: 600" src="./mfiles/gifs/hangcup.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hello_drawer_open.gif">
             </div>
             <div class="col-6">
-              <img class="img" style="height: 600" src="./mfiles/gifs/hangbag.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hello_light_switch.gif">
             </div>
           </div>
           <div class="row">
             <div class="col-6 left">
-              <img class="img" style="height: 600" src="./mfiles/gifs/turnknob.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_pegincup_full.gif">
             </div>
             <div class="col-6 left">
-              <img class="img" style="height: 600" src="./mfiles/gifs/stackcups.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_bagel.gif">
             </div>
           </div>
           <div class="row">
             <div class="col-6 left">
-              <img class="img" style="height: 600" src="./mfiles/gifs/pressbutton.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_key_insertion.gif">
             </div>
-            <div class="col-6 left">
+            <!-- <div class="col-6 left">
               <img class="img" style="height: 600" src="./mfiles/gifs/insertpegeasy.gif">
-            </div>
+            </div> -->
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-6 left">
               <img class="img" style="height: 600" src="./mfiles/gifs/insertpegmed.gif">
             </div>
@@ -209,19 +198,13 @@ higher than prior state-of-the-art methods.
         <div class="col-12">
           <h2 class="center m-bottom">Method</h2>
           <p><a style="color: #00A2FF; font-weight: bold;">Fast Imitation of Skills from Humans (FISH) </a>
-            "is an adaptive imitation learning algorithm where given a few demonstrations for complex, contact-rich manipulations
-            that covers a small subset of possible object con-
-            figurations, we seek to learn a robot policy that can gener-
-            alize to a larger set of configurations not seen during the
-            demonstrations. To enable this, we propose Fast Imitation of
-            Skills from Humans (FISH). FISH operates in two phases.
-            In the first phase, a weak base policy is trained on the few
-            demonstrations using supervised learning. This weak policy,
-            while being poor in generalization, serves as a useful prior for
-            subsequent adaptation. In the second phase, a residual policy is
-            trained to adapt the base policy to new object configurations.
-            This is done by RL on the robot with these configurations
-            using visual trajectory matching scores as the reward signal."
+            is an adaptive imitation learning algorithm where given a few demonstrations for complex, contact-rich manipulations
+            that covers a small subset of possible object configurations, we seek to learn a robot policy that can generalize to a
+            larger set of configurations not seen during the demonstrations. To enable this, we propose Fast Imitation of Skills 
+            from Humans (FISH). FISH operates in two phases. In the first phase, a weak base policy is trained on the few
+            demonstrations using supervised learning. This weak policy, while being poor in generalization, serves as a useful prior for
+            subsequent adaptation. In the second phase, a residual policy is trained to adapt the base policy to new object configurations.
+            This is done by RL on the robot with these configurations using visual trajectory matching scores as the reward signal.
         </div>
       </div>
     </div>
@@ -238,9 +221,7 @@ higher than prior state-of-the-art methods.
         <div class="col-12">
           <p>Our method and findings can be summarized as follows:
           <ul style="font-size: 1.125rem;font-weight: 200;line-height: 1.8">
-            <li> FISH
-                achieves an average success rate of 93%, which is around 3.8×
-                higher than prior state-of-the-art methods.</li>
+            <li> FISH achieves an average success rate of 93%, which is around 3.8× higher than prior state-of-the-art methods.</li>
             <li>FISH does not require hand crafted reawrd functions.</li>
             <li>FISH enables guided exploration on a provided subspace of the action space, yeilding safter exploration.</li>
             <li>Abalation experiments convey in detail the various design decisions made from freezing the encoder to the choice of base policies used.</li>
@@ -273,7 +254,7 @@ higher than prior state-of-the-art methods.
             <img class="center" src="./mfiles/appendix_pixel_results_metaworld.png" style="width:100%"></img>
           </ul>
           </p> -->
-          <h2 class="center m-bottom">Robot Results</h2>
+          <h2 class="center m-bottom">Real-World Tasks</h2>
           <p>We demonstrate the versatility of our algorithm by evaluating
             our approach on a suite of 9 tasks of varying difficulty
             across three different robot morphologies. We collect 1 minute
@@ -289,6 +270,71 @@ higher than prior state-of-the-art methods.
         </div>
       </div>
     </div>
+
+    <div class="body-content">
+      <div class="container">
+        <div class="grid-display">
+          <h2 class="center m-bottom">Robot Results</h2>
+          <div class="row">
+            <div class="col-6">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hand_cube_flip.gif">
+            </div>
+            <div class="col-6">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hand_bottle_open.gif">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hand_dollar_bill.gif">
+            </div>
+            <div class="col-6 center">
+             <img class="img" style="height: 600" src="./mfiles/gifs/hello_door_open.gif">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hello_drawer_open.gif">
+            </div>
+            <div class="col-6">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hello_light_switch.gif">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 left">
+              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_pegincup_full.gif">
+            </div>
+            <div class="col-6 left">
+              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_bagel.gif">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 left">
+              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_key_insertion.gif">
+            </div>
+            <!-- <div class="col-6 left">
+              <img class="img" style="height: 600" src="./mfiles/gifs/insertpegeasy.gif">
+            </div> -->
+          </div>
+          <!-- <div class="row">
+            <div class="col-6 left">
+              <img class="img" style="height: 600" src="./mfiles/gifs/insertpegmed.gif">
+            </div>
+            <div class="col-6 left">
+              <img class="img" style="height: 600" src="./mfiles/gifs/insertpeghard.gif">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 left">
+              <img class="img" style="height: 600" src="./mfiles/gifs/openbox.gif">
+            </div>
+            <div class="col-6 left">
+              <img class="img" style="height: 600" src="./mfiles/gifs/pour.gif">
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
 
     <!--Future Work-->
     <!-- <div class="container" style="padding-bottom: 150px; padding-top: 20px">
