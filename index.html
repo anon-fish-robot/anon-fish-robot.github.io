@@ -204,7 +204,7 @@
             from Humans (FISH). FISH operates in two phases. In the first phase, a weak base policy is trained on the few
             demonstrations using supervised learning. This weak policy, while being poor in generalization, serves as a useful prior for
             subsequent adaptation. In the second phase, a residual policy is trained to adapt the base policy to new object configurations.
-            This is done by RL on the robot with these configurations using visual trajectory matching scores as the reward signal.
+            This is done by performing reinforcement learning (RL) on the robot with these configurations using visual trajectory matching scores as the reward signal.
         </div>
       </div>
     </div>
@@ -271,48 +271,64 @@
       </div>
     </div>
 
+    <!--Robot Results-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="center m-bottom">Robot Results</h2>
+          <p>Results
+          </p>
+          <img src="./mfiles/gifs/combined_gif_cropped.gif" style="width: 100%;">
+          <img class="center" src="./mfiles/exps.png" style="width:100%"></img>
+          <!-- <img class="center" src="./mfiles/robot_exp_combined.png" style="width:100%"></img> -->
+          <br><br>
+          <!-- <img class="center" src="./mfiles/robot_results.png" style="width:100%"></img> -->
+        </div>
+      </div>
+    </div>
+<!-- 
     <div class="body-content">
       <div class="container">
         <div class="grid-display">
-          <h2 class="center m-bottom">Robot Results</h2>
+          <h2 class="center m-bottom">Robot Rollouts</h2>
           <div class="row">
             <div class="col-6">
-              <img class="img" style="height: 600" src="./mfiles/gifs/hand_cube_flip.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hand_cube_flip_success_gif.gif">
             </div>
             <div class="col-6">
-              <img class="img" style="height: 600" src="./mfiles/gifs/hand_bottle_open.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hand_bottle_open_success.gif">
             </div>
           </div>
           <div class="row">
             <div class="col-6">
-              <img class="img" style="height: 600" src="./mfiles/gifs/hand_dollar_bill.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hand_dollar_bill_pick_success.gif">
             </div>
             <div class="col-6 center">
-             <img class="img" style="height: 600" src="./mfiles/gifs/hello_door_open.gif">
+             <img class="img" style="height: 600" src="./mfiles/gifs/hello_door_open_success_gif.gif">
             </div>
           </div>
           <div class="row">
             <div class="col-6">
-              <img class="img" style="height: 600" src="./mfiles/gifs/hello_drawer_open.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hello_drawer_open_success.gif">
             </div>
             <div class="col-6">
-              <img class="img" style="height: 600" src="./mfiles/gifs/hello_light_switch.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/hello_light_switch_success.gif">
             </div>
           </div>
           <div class="row">
             <div class="col-6 left">
-              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_pegincup_full.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_pegincup_success_gif.gif">
             </div>
             <div class="col-6 left">
-              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_bagel.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_bagel_flip_success_gif.gif">
             </div>
           </div>
           <div class="row">
             <div class="col-6 left">
-              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_key_insertion.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/xarm_key_insertion_success_gif.gif">
             </div>
             <!-- <div class="col-6 left">
-              <img class="img" style="height: 600" src="./mfiles/gifs/insertpegeasy.gif">
+              <img class="img" style="height: 600" src="./mfiles/gifs/variation_hand_1dollar_gif.gif">
             </div> -->
           </div>
           <!-- <div class="row">
@@ -333,7 +349,98 @@
           </div> -->
         </div>
       </div>
+    </div> -->
+
+    <!--Experiments-->
+    <div class="c">
+      <input type="radio" name="a" id="cr-1">
+      <label for="cr-1" style="--hue: 82"></label>
+      <div class="ci" style="--z: 9">
+        <img src="./mfiles/gifs/hand_dollar_bill_pick_success.gif" alt="Trees">
+      </div>
+    
+      <input type="radio" name="a" id="cr-2">
+      <label for="cr-2" style="--hue: 40"></label>
+      <div class="ci" style="--z: 8">
+        <img src="./mfiles/gifs/hand_bottle_open_success.gif" alt="Mountains and houses">
+      </div>
+    
+      <input type="radio" name="a" id="cr-3">
+      <label for="cr-3" style="--hue: 210"></label>
+      <div class="ci" style="--z: 7">
+        <img src="./mfiles/gifs/hand_cube_flip_success_gif.gif" alt="Sky and mountains">
+      </div>
+
+      <input type="radio" name="a" id="cr-4">
+      <label for="cr-4" style="--hue: 210"></label>
+      <div class="ci" style="--z: 6">
+        <img src="./mfiles/gifs/xarm_bagel_flip_success_gif.gif" alt="Sky and mountains">
+      </div>
+
+      <input type="radio" name="a" id="cr-5">
+      <label for="cr-5" style="--hue: 210"></label>
+      <div class="ci" style="--z: 5">
+        <img src="./mfiles/gifs/xarm_key_insertion_success_gif.gif" alt="Sky and mountains">
+      </div>
+
+      <input type="radio" name="a" id="cr-6" checked>
+      <label for="cr-6" style="--hue: 32"></label>
+      <div class="ci" style="--z: 4">
+        <img src="./mfiles/gifs/xarm_pegincup_success_gif.gif" alt="Snow on leafs">
+      </div>
+
+      <input type="radio" name="a" id="cr-6" checked>
+      <label for="cr-6" style="--hue: 32"></label>
+      <div class="ci" style="--z: 3">
+        <img src="./mfiles/gifs/hello_door_open_success_gif.gif" alt="Snow on leafs">
+      </div>
+
+      <input type="radio" name="a" id="cr-6" checked>
+      <label for="cr-6" style="--hue: 32"></label>
+      <div class="ci" style="--z: 2">
+        <img src="./mfiles/gifs/hello_drawer_open_success.gif" alt="Snow on leafs">
+      </div>
+
+      <input type="radio" name="a" id="cr-6" checked>
+      <label for="cr-6" style="--hue: 32"></label>
+      <div class="ci" style="--z: 1">
+        <img src="./mfiles/gifs/hello_light_switch_success.gif" alt="Snow on leafs">
+      </div>
+
     </div>
+
+    <!--Generalization Results-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="center m-bottom">Generalization Results</h2>
+          <p>Results
+          </p>
+          <img src="./mfiles/gifs/combined_gif_cropped.gif" style="width: 100%;">
+          <img class="center" src="./mfiles/exps.png" style="width:100%"></img>
+          <!-- <img class="center" src="./mfiles/robot_exp_combined.png" style="width:100%"></img> -->
+          <br><br>
+          <!-- <img class="center" src="./mfiles/robot_results.png" style="width:100%"></img> -->
+        </div>
+      </div>
+    </div>
+
+    <!--Generalization rollouts-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="center m-bottom">Generalization rollouts</h2>
+          <p>Results
+          </p>
+          <img src="./mfiles/gifs/combined_gif_cropped.gif" style="width: 100%;">
+          <img class="center" src="./mfiles/exps.png" style="width:100%"></img>
+          <!-- <img class="center" src="./mfiles/robot_exp_combined.png" style="width:100%"></img> -->
+          <br><br>
+          <!-- <img class="center" src="./mfiles/robot_results.png" style="width:100%"></img> -->
+        </div>
+      </div>
+    </div>
+
 
 
     <!--Future Work-->
